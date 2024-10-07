@@ -611,8 +611,6 @@ class SklearnModelInfo(ModelInfo):
 
     @property
     def target_values(self):
-        if self.is_binary_classifier:
-            return [self.model.classes_[-1]]
         if self.is_classifier:
             return list(self.model.classes_)
 
