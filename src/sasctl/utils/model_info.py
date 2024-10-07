@@ -612,7 +612,7 @@ class SklearnModelInfo(ModelInfo):
     @property
     def target_values(self):
         if self.is_classifier:
-            return str(self.model.classes_)
+            return (' '.join(str(x) for x in self.model.classes_))
 
     @property
     def threshold(self):
