@@ -1,5 +1,18 @@
+v1.11.0 (2024-10-29)
+--------------------
+**Changes**
+- Added `score_definition.py` and `score_execution.py` to allow for score testing within SAS Model Manager
+  - Included optional use of CAS Gateway for faster scoring. Only available in environments where Gateway scoring is properly set up.
+- Added ability to include data pre-processing function within python score code using the `preprocess_function` argument.
+
+**Bugfixes**
+- Fixed issue where settings file was improperly imported in some score code files.
+
 v1.10.7 (2024-10-02)
 --------------------
+**Changes**
+ - Due to licensing restrictions, the `sasctl` package will no longer be available through Anaconda.
+
 **Bugfixes**
  - Fixed a bug that caused an error when performing SSL verification without a CA bundle specified.
 
